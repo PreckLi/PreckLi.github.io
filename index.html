@@ -1,44 +1,107 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>个人主页</title>
+    <title>Kunhom Li's Personal Website</title>
     <style>
         body {
             background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
             font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
         .container {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             height: 100vh;
+            padding: 0 5%;
             color: white;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
+        .left-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-right: 2em;
+        }
+        .right-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
         h1 {
-            font-size: 3em;
+            font-size: 2.5em;
             margin-bottom: 0.5em;
         }
-        p {
-            font-size: 1.5em;
+        h2 {
+            font-size: 1.8em;
+            margin: 1em 0;
+            text-decoration: underline;
+        }
+        p, li {
+            font-size: 1.2em;
+            line-height: 1.6;
         }
         img {
             border-radius: 50%;
-            width: 200px;
-            height: 200px;
+            width: 300px;
+            height: 300px;
             object-fit: cover;
-            margin-top: 1em;
+            margin-bottom: 2em;
+        }
+        a {
+            color: white;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #ffd700;
+        }
+        .section {
+            margin-bottom: 2em;
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div>
-            <h1>欢迎来到我的个人主页</h1>
-            <img src="https://github.com/PreckLi/PreckLi.github.io/blob/main/biograph.jpg" alt="你的照片">
-            <p>这里是一些关于我自己的信息。</p>
-            <p>这里是我作品的一些描述和链接。</p>
-            <p>联系方式：email@example.com</p>
+        <div class="left-column">
+            <h1>Welcome to Kunhom Li's Personal Website</h1>
+            <img src="https://github.com/PreckLi/PreckLi.github.io/blob/main/biograph.jpg?raw=true" alt="Kunhom Li">
+            <p>Contact me: preckli1999@163.com (Primary); kunhomlihf@gmail.com (Academy)</p>
+            <p><a href="https://github.com/PreckLi">My GitHub</a></p>
+            <div class="section">
+                <h2>Introduction</h2>
+                <p>I am currently a graduate student majoring in artificial intelligence at Anhui University (2021~now). My research interests include graph neural networks, data mining, and deep learning. I am currently looking for a Ph.D. position in the field of artificial intelligence.</p>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="section">
+                <h2>Education</h2>
+                <p>I graduated from Anhui Normal University in 2021 with a B.E. degree in Internet of Things. In 2021, I was admitted to the School of Internet at Anhui University, ranking first in the major with a total score of 381 (professional courses 143).</p>
+            </div>
+            <div class="section">
+                <h2>Publication</h2>
+                <ul>
+                    <li><a href="https://ieeexplore.ieee.org/document/10039676">K. Li, Z. Huang and Z. Jia, "RAHG: A Role-Aware Hypergraph Neural Network for Node Classification in Graphs," in IEEE Transactions on Network Science and Engineering, vol. 10, no. 4, pp. 2098-2108, 1 July-Aug. 2023, doi: 10.1109/TNSE.2023.3243058.</a></li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>Awards</h2>
+                <ul>
+                    <li>Internet Competition - Bronze Award at the university level.</li>
+                    <li>Third Prize in the 2019 Anhui Province Robot Competition - Single-Chip Microcontroller and Embedded System Competition, Platform B.</li>
+                    <li>Third Prize in the 2019 Anhui Province Network and Distributed System Innovation Design Competition.</li>
+                    <li>Excellence Award in the 12th "Certification Cup" Mathematical Modeling Network Challenge in 2019.</li>
+                    <li>Third Prize in the 2020 WeChat Mini Program Application Development Competition - East China Region.</li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>

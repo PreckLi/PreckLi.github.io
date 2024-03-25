@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kunhom Li's Personal Website</title>
     <style>
         body {
-            background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
@@ -12,34 +13,32 @@
         }
         .container {
             display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            height: 100vh;
-            padding: 0 5%;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-        .left-column {
-            flex: 1;
-            display: flex;
             flex-direction: column;
-            align-items: flex-start;
-            margin-right: 2em;
+            align-items: center;
+            background: #f8f9fa;
+            color: #333;
+            padding: 2em;
+            max-width: 800px;
+            margin: 0 auto;
         }
-        .right-column {
-            flex: 1;
+        .profile-section {
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
+            width: 100%;
+        }
+        .profile-details {
+            margin-left: 2em;
+            padding-left: 0;
         }
         h1 {
             font-size: 2.5em;
             margin-bottom: 0.5em;
+            color: #007bff;
         }
         h2 {
             font-size: 1.8em;
             margin: 1em 0;
-            text-decoration: underline;
+            color: #007bff;
         }
         p, li {
             font-size: 1.2em;
@@ -47,41 +46,47 @@
         }
         img {
             border-radius: 50%;
-            width: 300px;
-            height: 300px;
+            width: 200px;
+            height: 200px;
             object-fit: cover;
-            margin-bottom: 2em;
+            margin-bottom: 1em;
         }
         a {
-            color: white;
+            color: #007bff;
+            text-decoration: none;
             transition: color 0.3s;
         }
         a:hover {
-            color: #ffd700;
+            color: #0056b3;
         }
-        .section {
-            margin-bottom: 2em;
-            animation: fadeIn 2s;
-        }
-        @keyframes fadeIn {
-            0% {opacity: 0;}
-            100% {opacity: 1;}
+        .language-button {
+            background-color: #007bff;
+            color: white;
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            position: absolute;
+            top: 20px;
+            right: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="left-column">
+        <div id="englishContent">
             <h1>Welcome to Kunhom Li's Personal Website</h1>
-            <img src="https://github.com/PreckLi/PreckLi.github.io/blob/main/biograph.jpg?raw=true" alt="Kunhom Li">
-            <p>Contact me: preckli1999@163.com (Primary); kunhomlihf@gmail.com (Academic)</p>
-            <p><a href="https://github.com/PreckLi">My GitHub</a></p>
-            <div class="section">
-                <h2>Introduction</h2>
-                <p>I am currently a graduate student majoring in artificial intelligence at Anhui University (2021~now), supervised by <a href="https://zhenhuascut.github.io/">Zhenhua Huang</a> and <a href="http://si.ahu.edu.cn/2019/0815/c16555a206604/page.htm">Zhaohong Jia</a>. My research interests include graph neural networks, data mining, and deep learning. I am currently looking for a Ph.D. position in the field of artificial intelligence.</p>
+            <div class="profile-section">
+                <img src="https://github.com/PreckLi/PreckLi.github.io/blob/main/biograph.jpg?raw=true" alt="Kunhom Li">
+                <div class="profile-details">
+                    <div class="section">
+                        <h2>Introduction</h2>
+                        <p>I am currently a graduate student majoring in artificial intelligence at Anhui University (2021~now), supervised by <a href="https://zhenhuascut.github.io/">Zhenhua Huang</a> and <a href="http://si.ahu.edu.cn/2019/0815/c16555a206604/page.htm">Zhaohong Jia</a>. My research interests include graph neural networks, data mining, and deep learning. I am admitted to South China University of Technology and will be engaged in research work on large models in the future.</p>
+                    </div>
+                    <p>Contact me: preckli1999@163.com (Primary); kunhomlihf@gmail.com (Academic)</p>
+                    <p><a href="https://github.com/PreckLi">My GitHub</a></p>
+                </div>
             </div>
-        </div>
-        <div class="right-column">
             <div class="section">
                 <h2>Education</h2>
                 <p>I graduated from Anhui Normal University in 2021 with a B.E. degree in Internet of Things. In 2021, I was admitted to the School of Internet at Anhui University, ranking first in the major with a total score of 381 (professional courses 143).</p>
@@ -105,6 +110,69 @@
                 </ul>
             </div>
         </div>
+        <div id="chineseContent" style="display: none;">
+            <h1>欢迎来到李坤豪的个人主页</h1>
+            <div class="profile-section">
+                <img src="https://github.com/PreckLi/PreckLi.github.io/blob/main/biograph.jpg?raw=true" alt="Kunhom Li">
+                <div class="profile-details">
+                    <div class="section">
+                        <h2>个人简介</h2>
+                        <p>我目前是安徽大学人工智能专业的硕士研究生(2021~至今)，导师是助理教授 <a href="https://zhenhuascut.github.io/">黄振华</a> 以及教授 <a href="http://si.ahu.edu.cn/2019/0815/c16555a206604/page.htm">贾兆红</a>。 我的研究兴趣包括图神经网络，数据挖掘和深度学习。 我以后将会从事大模型方面的研究工作</p>
+                    </div>
+                    <p>请联系我:</p>
+                    <p>preckli1999@163.com (主用)</p>
+                    <p>kunhomlihf@gmail.com (学术)</p>
+                    <p><a href="https://github.com/PreckLi">我的 Github</a></p>
+                </div>
+            </div>
+            <div class="section">
+                <h2>教育经历</h2>
+                <p>我于2021年毕业于安徽师范大学，获得物联网学士学位。2021年考入安徽大学互联网学院，以381分(专业课143分)的成绩排名专业第一。</p>
+            </div>
+            <div class="section">
+                <h2>出版物</h2>
+                <ul>
+                    <li><a href="https://github.com/PreckLi/SES">Huang Z, Li K, et al. SES: Bridging the Gap Between Explainability and Prediction of Graph Neural Networks. 被ICDE2024录用 (CCF A 会议)</a></li>
+                    <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705123006731?via%3Dihub">Huang Z, Zhou W, Li K, et al. SGCN: A scalable graph convolutional network with graph-shaped kernels and multi-channels[J]. Knowledge-Based Systems, 2023: 110923. (Equal first author)</a></li>
+                    <li><a href="https://ieeexplore.ieee.org/document/10039676">K. Li, Z. Huang and Z. Jia, "RAHG: A Role-Aware Hypergraph Neural Network for Node Classification in Graphs," in IEEE Transactions on Network Science and Engineering, vol. 10, no. 4, pp. 2098-2108, 1 July-Aug. 2023, doi: 10.1109/TNSE.2023.3243058.</a></li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>获奖</h2>
+                <ul>
+                    <li>互联网竞赛-校级铜奖</li>
+                    <li> 2019年安徽省机器人大赛单片机及嵌入式系统竞赛b平台三等奖</li>
+                    <li> 2019年安徽省网络与分布式系统创新设计大赛三等奖</li>
+                    <li>2019年第十二届“认证杯”数学建模网络挑战赛优秀奖</li>
+                    <li> 2020微信小程序应用开发大赛华东区三等奖</li>
+                </ul>
+            </div>
+        </div>
+        <button id="languageButton" class="language-button" onclick="toggleLanguage()">Switch Language</button>
     </div>
+
+    <script>
+        const chineseContent = document.getElementById('chineseContent');
+        const englishContent = document.getElementById('englishContent');
+        // Hide Chinese content by default
+        if (chineseContent) {
+            chineseContent.style.display = 'none';
+        }
+        function toggleLanguage() {
+            if (englishContent && chineseContent) { // 确保两个容器都存在
+                if (englishContent.style.display === 'none') {
+                    englishContent.style.display = 'block';
+                    chineseContent.style.display = 'none';
+                    document.getElementById('languageButton').textContent = '切换语言';
+                } else {
+                    englishContent.style.display = 'none';
+                    chineseContent.style.display = 'block';
+                    document.getElementById('languageButton').textContent = 'Switch Language';
+                }
+            } else {
+                console.error('One of the content containers does not exist.');
+            }
+        }          
+    </script>
 </body>
 </html>

@@ -21,14 +21,16 @@
             max-width: 800px;
             margin: 0 auto;
         }
-        .profile-section {
-            display: flex;
-            align-items: center;
-            width: 100%;
-        }
-        .profile-details {
-            margin-left: 2em;
-            padding-left: 0;
+        @media (max-width: 768px) {
+            .profile-section { 
+                display: flex;
+                align-items: center;
+                width: 100%; 
+            }
+            .profile-details {
+                flex: 1; /* 使得profile-details能够填充剩余空间 */
+                padding: 1em; /* 为了不让文本紧贴边缘，添加一些内边距 */
+            }
         }
         h1 {
             font-size: 2.5em;
@@ -46,8 +48,8 @@
         }
         img {
             border-radius: 50%;
-            width: 200px;
-            height: 200px;
+            width: 150px;
+            height: 150px;
             object-fit: cover;
             margin-bottom: 1em;
         }

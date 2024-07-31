@@ -1,82 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Kunhao Li's Personal Website (李坤豪的个人主页)👋</title>
-        <style>
-            body {
-                font-family: 'Arial', sans-serif;
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-            .container {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                background: #f8f9fa;
-                color: #333;
-                padding: 2em;
-                max-width: 800px;
-                margin: 0 auto;
-            }
-            .profile-section {
-                display: flex;
-                align-items: center;
-                width: 100%;
-            }
-            .profile-details {
-                flex: 1; /* Allows profile-details to fill the remaining space */
-                padding: 1em; /* Adds padding around the text */
-            }
-            h1, h2 {
-                color: #007bff;
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kunhao Li's Personal Website (李坤豪的个人主页)👋</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #f8f9fa;
+            color: #333;
+            padding: 2em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .profile-section {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            flex-wrap: wrap; /* Allow wrap for smaller screens */
+        }
+        .profile-details {
+            flex: 1; /* Allows profile-details to fill the remaining space */
+            padding: 1em; /* Adds padding around the text */
+        }
+        h1, h2 {
+            color: #007bff;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin: 1em 0;
+        }
+        p, li {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        img {
+            border-radius: 50%;
+            width: 210px;
+            height: 210px;
+            object-fit: cover;
+            margin-right: 1em; /* Adds margin to the right of the image */
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #0056b3;
+        }
+        .language-button {
+            background-color: #007bff;
+            color: white;
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 1em 0; /* Adds margin above and below the button */
+        }
+
+        /* Mobile styles */
+        @media (max-width: 600px) {
             h1 {
-                font-size: 2.5em;
-                margin-bottom: 0.5em;
+                font-size: 2em; /* Smaller font size for mobile */
             }
             h2 {
-                font-size: 1.8em;
-                margin: 1em 0;
+                font-size: 1.5em; /* Smaller font size for mobile */
             }
             p, li {
-                font-size: 1.2em;
-                line-height: 1.6;
+                font-size: 1em; /* Smaller font size for mobile */
             }
             img {
-                border-radius: 50%;
-                width: 210px;
-                height: 210px;
-                object-fit: cover;
-                margin-right: 1em; /* Adds margin to the right of the image */
+                width: 150px; /* Smaller image for mobile */
+                height: 150px; /* Smaller image for mobile */
+                margin: 0 auto; /* Center image */
+                margin-bottom: 1em; /* Space below the image */
             }
-            a {
-                color: #007bff;
-                text-decoration: none;
-                transition: color 0.3s;
+            .profile-section {
+                flex-direction: column; /* Stack image and text vertically */
+                align-items: center; /* Center content */
+                text-align: center; /* Center text */
             }
-            a:hover {
-                color: #0056b3;
-            }
-            .language-button {
-                background-color: #007bff;
-                color: white;
-                padding: 0.5em 1em;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-                position: absolute;
-                top: 20px;
-                right: 20px;
-            }
-        </style>
-    </head>
+        }
+    </style>
+</head>
 <body>
     <div class="container">
         <div id="englishContent">
             <h1>Welcome to Kunhao Li's Personal Website</h1>
+            <button id="languageButton" class="language-button" onclick="toggleLanguage()">Switch Language</button>
             <div class="profile-section">
                 <img src="https://github.com/PreckLi/PreckLi.github.io/blob/main/biograph1.jpg?raw=true" alt="Kunhom Li">
                 <div class="profile-details">
@@ -97,10 +121,11 @@
             <div class="section">
                 <h2>Publications</h2>
                 <ul>
-                    <li><a href="https://export.arxiv.org/abs/2407.11358">Huang Z, Li K, et al. SES: Bridging the Gap Between Explainability and Prediction of Graph Neural Networks. ICDE2024 (CCF A)</a></li>
-                    <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705123006731?via%3Dihub">Huang Z, Zhou W, Li K, et al. SGCN: A scalable graph convolutional network with graph-shaped kernels and multi-channels[J]. Knowledge-Based Systems, 2023: 110923. (Equal first author)</a></li>
-                    <li><a href="https://ieeexplore.ieee.org/document/10039676">K. Li, Z. Huang and Z. Jia, "RAHG: A Role-Aware Hypergraph Neural Network for Node Classification in Graphs," in IEEE Transactions on Network Science and Engineering, vol. 10, no. 4, pp. 2098-2108, 1 July-Aug. 2023, doi: 10.1109/TNSE.2023.3243058.</a></li>
-                    <li><a href="https://arxiv.org/abs/2407.11361">Huang Z, Li K, et al. Graph Structure Prompt Learning: A Novel Methodology to Improve Performance of Graph Neural Networks.</a></li>
+                    <li><a href="https://export.arxiv.org/abs/2407.11358">Huang Z, <b>Li K</b>, et al. SES: Bridging the Gap Between Explainability and Prediction of Graph Neural Networks. ICDE2024 (CCF A)</a></li>
+                    <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4827442">Huang Z, <b>Li K</b>, et al. Graph Relearn Network: Reducing Performance Variance and Improving Prediction Accuracy of Graph Neural Networks[J]. Knowledge-Based Systems, 2024. (Equal first author)</a></li>
+                    <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705123006731?via%3Dihub">Huang Z, Zhou W, <b>Li K</b>, et al. SGCN: A scalable graph convolutional network with graph-shaped kernels and multi-channels[J]. Knowledge-Based Systems, 2023: 110923. (Equal first author)</a></li>
+                    <li><a href="https://ieeexplore.ieee.org/document/10039676"><b>K. Li</b>, Z. Huang and Z. Jia, "RAHG: A Role-Aware Hypergraph Neural Network for Node Classification in Graphs," in IEEE Transactions on Network Science and Engineering, vol. 10, no. 4, pp. 2098-2108, 1 July-Aug. 2023, doi: 10.1109/TNSE.2023.3243058.</a></li>
+                    <li><a href="https://arxiv.org/abs/2407.11361">Huang Z, <b>Li K</b>, et al. Graph Structure Prompt Learning: A Novel Methodology to Improve Performance of Graph Neural Networks.</a></li>
                 </ul>
             </div>
             <div class="section">
@@ -116,6 +141,7 @@
         </div>
         <div id="chineseContent">
             <h1>欢迎来到李坤豪的个人主页</h1>
+            <button id="languageButton" class="language-button" onclick="toggleLanguage()">Switch Language | English</button>
             <div class="profile-section">
                 <img src="https://github.com/PreckLi/PreckLi.github.io/blob/main/biograph1.jpg?raw=true" alt="Kunhom Li">
                 <div class="profile-details">
@@ -136,10 +162,11 @@
             <div class="section">
                 <h2>出版物</h2>
                 <ul>
-                    <li><a href="https://export.arxiv.org/abs/2407.11358">Huang Z, Li K, et al. SES: Bridging the Gap Between Explainability and Prediction of Graph Neural Networks. ICDE2024 (CCF A)</a></li>
-                    <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705123006731?via%3Dihub">Huang Z, Zhou W, Li K, et al. SGCN: A scalable graph convolutional network with graph-shaped kernels and multi-channels[J]. Knowledge-Based Systems, 2023: 110923. (Equal first author)</a></li>
-                    <li><a href="https://ieeexplore.ieee.org/document/10039676">K. Li, Z. Huang and Z. Jia, "RAHG: A Role-Aware Hypergraph Neural Network for Node Classification in Graphs," in IEEE Transactions on Network Science and Engineering, vol. 10, no. 4, pp. 2098-2108, 1 July-Aug. 2023, doi: 10.1109/TNSE.2023.3243058.</a></li>
-                    <li><a href="https://arxiv.org/abs/2407.11361">Huang Z, Li K, et al. Graph Structure Prompt Learning: A Novel Methodology to Improve Performance of Graph Neural Networks.</a></li>
+                    <li><a href="https://export.arxiv.org/abs/2407.11358">Huang Z, <b>Li K</b>, et al. SES: Bridging the Gap Between Explainability and Prediction of Graph Neural Networks. ICDE2024 (CCF A)</a></li>
+                    <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4827442">Huang Z, <b>Li K</b>, et al. Graph Relearn Network: Reducing Performance Variance and Improving Prediction Accuracy of Graph Neural Networks[J]. Knowledge-Based Systems, 2024. (Equal first author)</a></li>
+                    <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705123006731?via%3Dihub">Huang Z, Zhou W, <b>Li K</b>, et al. SGCN: A scalable graph convolutional network with graph-shaped kernels and multi-channels[J]. Knowledge-Based Systems, 2023: 110923. (Equal first author)</a></li>
+                    <li><a href="https://ieeexplore.ieee.org/document/10039676"><b>K. Li</b>, Z. Huang and Z. Jia, "RAHG: A Role-Aware Hypergraph Neural Network for Node Classification in Graphs," in IEEE Transactions on Network Science and Engineering, vol. 10, no. 4, pp. 2098-2108, 1 July-Aug. 2023, doi: 10.1109/TNSE.2023.3243058.</a></li>
+                    <li><a href="https://arxiv.org/abs/2407.11361">Huang Z, <b>Li K</b>, et al. Graph Structure Prompt Learning: A Novel Methodology to Improve Performance of Graph Neural Networks.</a></li>
                 </ul>
             </div>
             <div class="section">
@@ -153,7 +180,6 @@
                 </ul>
             </div>
         </div>
-        <button id="languageButton" class="language-button" onclick="toggleLanguage()">Switch Language</button>
     </div>
 
     <script>

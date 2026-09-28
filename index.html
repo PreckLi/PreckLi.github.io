@@ -1,292 +1,1268 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Kunhao Li">
+  <meta name="description" content="Kunhao Li — PhD student working on LLM privacy, graph safety, data mining, and deep learning.">
+  <title>Kunhao Li — Academic Homepage</title>
 
-    <title>Kunhao Li's Personal Website (李坤豪的个人主页)👋</title>
+  <style>
+    :root {
+      --bg: #f7f8fa;
+      --surface: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --accent: #1d4ed8;
+      --accent-soft: #eff6ff;
+      --tag: #f3f4f6;
+      --max: 1080px;
+      --shadow: 0 10px 35px rgba(15, 23, 42, 0.06);
+      --radius: 18px;
+    }
 
-    <meta name="author" content="Kunhao Li">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="shortcut icon" href="https://github.com/PreckLi/PreckLi.github.io/blob/main/khl_ai.jpg" type="image/x-icon"> -->
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    
-  </head>
+    * {
+      box-sizing: border-box;
+    }
 
-  
-  <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
+    html {
+      scroll-behavior: smooth;
+    }
 
-          <!-- About Me -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                    <h1>Kunhao Li (Kunhom)</h1>
-                </p>
-                <h2>About Me</h2>
-                <p>
-                    I am currently a doctor student specializing in artificial intelligence at <strong>South China University of Technology</strong> (2024~present), under the supervision of <a href="https://www2.scut.edu.cn/sse/2018/0614/c16788a270682/page.htm">Lei Yang</a>. My research interests encompass large language models, data mining, and deep learning.
-                </p>
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 10% 0%, rgba(29, 78, 216, 0.05), transparent 26rem),
+        var(--bg);
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+                   "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+    }
 
-                <p>
-                    I graduated from Anhui Normal University in 2021, earning a B.Eng degree in Internet of Things. That same year, I was accepted into Anhui University, where I ranked first in my major with a total score of 381 (achieving 143 in professional courses). In 2024, I was admitted to South China University of Technology to pursue my doctor degree. 
-                </p>
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-                <p>
-                    Currently, I am doing further research on LLM privacy and general graph safety. If you are interested in my work, feel free to reach out to me!
-                </p>
+    a:hover {
+      color: var(--accent);
+    }
 
-                <p style="text-align:center">
-                  <a href="mailto:kunhomlihf@gmail.com">Email</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com.hk/citations?user=RMzk1SoAAAAJ&hl=zh-CN">Google Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/PreckLi">Github</a> &nbsp;
-                </p>
-              </td>
-              <td style="padding:2.5%;width:40%;max-width:40%">
-                <a href="images/khl_ai.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/khl_ai.jpg" class="hoverZoomLink"></a>
-              </td>
-            </tr>
-          </tbody></table>
+    .container {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+    }
 
-          <!-- Publications -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:10px 20px;width:100%;vertical-align:middle">
-                <h2>Publications</h2>
-                <p>
-                  1 denotes equal contribution
-              </td>
-            </tr>            
-          </tbody></table>
+    /* =========================
+       Navigation
+    ========================== */
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:5px 20px;width:100%;vertical-align:middle" valign="middle">
-                <span class="papertitle">HiddenEcho: Mitigating Noise Amplification in Differentially Private LLMs with Hidden-State Correction</span>
-                <br>
-                Wenhao Li, <strong>Kunhao Li 1</strong>, Lei Yang
-                <br>
-                <strong>ICLR 2026 (CCF A)</strong>
-                <br>
-                <a href="https://openreview.net/pdf?id=ER9BElK8He">Paper</a>
-                <br>
-                <!-- <a href="https://arxiv.org/abs/2511.06793">arXiv Link</a> -->
-              </td>
-            </tr>
-          </tbody></table>
-          
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:5px 20px;width:100%;vertical-align:middle" valign="middle">
-                <span class="papertitle">Cross-Modal Unlearning via Influential Neuron Path Editing in Multimodal Large Language Models</span>
-                <br>
-                <strong>Kunhao Li</strong>, Wenhao Li, Di Wu, Lei Yang, Jun Bai, Ju Jia, Jason Xue 
-                <br>
-                <strong>AAAI 2026 Oral (CCF A)</strong>
-                
-                <br>
-                <a href="https://ojs.aaai.org/index.php/AAAI/article/view/40870">Paper</a>
-              </td>
-            </tr>
-          </tbody></table>
-          
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:5px 20px;width:100%;vertical-align:middle" valign="middle">
-                <span class="papertitle">Who Owns This Sample: Cross-Client Membership Inference Attack in Federated Graph Neural Networks</span>
-                <br>
-                <strong>Kunhao Li</strong>, Di Wu, Jun Bai, Jing Xu, Lei Yang, Ziyi Zhang, Yiliao Song, Wencheng Yang, Taotao Cai, Yan Li
-                <br>
-                <strong>arXiv:2507.19964</strong>
-                
-                <br>
-                <a href="https://arxiv.org/abs/2507.19964">arXiv Link</a>
-              </td>
-            </tr>
-          </tbody></table>
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(14px);
+      background: rgba(247, 248, 250, 0.86);
+      border-bottom: 1px solid rgba(229, 231, 235, 0.85);
+    }
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:5px 20px;width:100%;vertical-align:middle" valign="middle">
-                <span class="papertitle">SES: Bridging the Gap Between Explainability and Prediction of Graph Neural Networks</span>
-                <br>
-                Zhenhua Huang, <strong>Kunhao Li</strong>, Shaojie Wang, Zhaohong Jia, Wentao Zhu, Sharad Mehrotra
-                <br>
-                <strong>ICDE 2024 (CCF A)</strong>
-                
-                <br>
-                <a href="https://ieeexplore.ieee.org/document/10597945">Paper</a>
-              </td>
-            </tr>
-          </tbody></table>
+    .nav {
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:5px 20px;width:100%;vertical-align:middle" valign="middle">
-                <span class="papertitle">Graph Relearn Network: Reducing performance variance and improving prediction accuracy of graph neural networks</span>
-                <br>
-                Zhenhua Huang 1, <strong>Kunhao Li 1</strong>, Yihang Jiang, Zhaohong Jia, Linyuan Lv, Yunjie Ma
-                <br>
-                <strong>Knowledge-Based Systems, October 2024 (SCI Q1; 2025 KBS Best Paper Award)</strong>
-                <br>
-                <a href="https://www.sciencedirect.com/science/article/pii/S0950705124009456">Paper</a>
-              </td>
-            </tr>
-          </tbody></table>
+    .brand {
+      font-weight: 750;
+      letter-spacing: -0.02em;
+      white-space: nowrap;
+    }
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:5px 20px;width:100%;vertical-align:middle" valign="middle">
-                <span class="papertitle">SGCN: A scalable graph convolutional network with graph-shaped kernels and multi-channels</span>
-                <br>
-                Zhenhua Huang 1, Wenhao Zhou 1, <strong>Kunhao Li 1</strong>, Zhaohong Jia
-                <br>
-                <strong>Knowledge-Based Systems, November 2023 (SCI Q1)</strong>
-                <br>
-                <a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705123006731?via%3Dihub">Paper</a>
-              </td>
-            </tr>
-          </tbody></table>
+    .brand span {
+      color: var(--muted);
+      font-weight: 500;
+    }
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:5px 20px;width:100%;vertical-align:middle" valign="middle">
-                <span class="papertitle">RAHG: A Role-Aware Hypergraph Neural Network for Node Classification in Graphs </span>
-                <br>
-                <strong>Kunhao Li</strong>, Zhenhua Huang, Zhaohong Jia
-                <br>
-                <strong>IEEE Transactions on Network Science and Engineering, February 2023 (SCI Q1)</strong>
-                <br>
-                <a href="https://ieeexplore.ieee.org/document/10039676">Paper</a>
-              </td>
-            </tr>
-          </tbody></table>
+    .navlinks {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 20px;
+      color: var(--muted);
+      font-size: 14px;
+    }
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:5px 20px;width:100%;vertical-align:middle" valign="middle">
-                <span class="papertitle">Graph Structure Prompt Learning: A Novel Methodology to Improve Performance of Graph Neural Networks</span>
-                <br>
-                Zhenhua Huang, <strong>Kunhao Li</strong>, Shaojie Wang, Zhaohong Jia, Wentao Zhu, Sharad Mehrotra
-                <br>
-                <strong>Applied Intelligence 2025 (SCI Q2)</strong>
-                <br>
-                <a href="https://link.springer.com/article/10.1007/s10489-025-06952-x">Paper</a>
-              </td>
-            </tr>
-          </tbody></table>
+    .navlinks a {
+      transition: color 0.2s ease;
+    }
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:5px 20px;width:100%;vertical-align:middle" valign="middle">
-                <h2>Patents</h2>
-                <span class="papertitle">An adaptive semantic-aware privacy protection method and device for large language models</span>
-                <br>
-                <strong>Kunhao Li</strong>, Lei Yang
-                <br>
-                <a href="https://d.wanfangdata.com.cn/patent/ZL_CN202510014381.7_CN120068141A_20250530">Link</a>
-            </tr>
-          </tbody></table>
-          
-          <!-- Football -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Football</h2>
-                <p>
-                    2019: 8th Place, Anhui Provincial University Football Cup (Left Back, Jersey No. 66)
-                </p>
-                <p>
-                    2021: 3rd Place, Anhui University Championship (Midfielder, Jersey No. 10)
-                </p>
-                <p>
-                    2024: Runner-Up, South China University of Technology Championship (Attacking Midfielder, Jersey No. 23)
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-          
-          <!-- Academic Service -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Academic Service</h2>
-              </td>
-            </tr>
+    /* =========================
+       Hero
+    ========================== */
 
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:10px 20px;width:100%;vertical-align:middle">
-                <span class="papertitle">Reviewer</span>
-                <br>
-                <a href="https://cis.ieee.org/publications/t-neural-networks-and-learning-systems">IEEE Transactions on Neural Networks and Learning Systems</a>
-                <br>
-                <a href="https://link.springer.com/journal/11227">Journal of Supercomputing</a>
-                <br>
-                <a href="https://journalofbigdata.springeropen.com/">Journal of BigData</a>
-                <br>
-                <a href="https://link.springer.com/journal/13042">International Journal of Machine Learning and Cybernetics</a>
-              </td>
-            </tr>
+    .hero {
+      display: grid;
+      grid-template-columns: 1.4fr 0.8fr;
+      gap: 56px;
+      align-items: center;
+      padding: 76px 0 54px;
+    }
 
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:10px 20px;width:100%;vertical-align:middle">
-                <span class="papertitle">Award</span>
-                <br>
-                <p>Knowledge-Based Systems 2025 BEST PAPER AWARD</p>
-              </td>
-            </tr>
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 11px;
+      border: 1px solid #dbe4f7;
+      border-radius: 999px;
+      background: rgba(239, 246, 255, 0.7);
+      color: #1e40af;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
 
-          </tbody></table>
+    .hero h1 {
+      margin: 17px 0 10px;
+      font-size: clamp(42px, 6vw, 72px);
+      line-height: 1.02;
+      letter-spacing: -0.055em;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .role {
+      margin: 0 0 18px;
+      color: #374151;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .intro {
+      max-width: 720px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .research-tags,
+    .actions,
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .research-tags {
+      margin: 25px 0 28px;
+    }
+
+    .tag {
+      padding: 7px 11px;
+      border-radius: 999px;
+      background: var(--tag);
+      color: #4b5563;
+      font-size: 13px;
+    }
+
+    .actions {
+      margin-top: 10px;
+      gap: 10px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      min-height: 42px;
+      padding: 0 15px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--surface);
+      color: #374151;
+      font-size: 14px;
+      font-weight: 650;
+      transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+    .btn:hover {
+      color: inherit;
+      border-color: #cbd5e1;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.07);
+      transform: translateY(-1px);
+    }
+
+    .btn.primary {
+      border-color: var(--accent);
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .portrait-wrap {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .portrait-card {
+        width: min(330px, 100%);
+        padding: 10px;
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        background: var(--surface);
+        box-shadow: var(--shadow);
+    }
+
+    .portrait-card img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 18px;
+    }
+
+    .caption {
+      margin: 10px 5px 2px;
+      color: var(--muted);
+      font-size: 12px;
+      text-align: center;
+    }
+
+    /* =========================
+       Sections
+    ========================== */
+
+    section {
+      padding: 22px 0;
+      scroll-margin-top: 85px;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+
+    .section-head h2 {
+      margin: 0;
+      font-size: 27px;
+      letter-spacing: -0.035em;
+    }
+
+    .section-note {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .panel {
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    /* =========================
+       About
+    ========================== */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 0.9fr;
+      gap: 28px;
+    }
+
+    .about-grid p {
+      margin: 0 0 15px;
+      color: #4b5563;
+    }
+
+    .about-grid p:last-child {
+      margin-bottom: 0;
+    }
+
+    .side-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .side-item {
+      padding: 14px 15px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fbfcfd;
+    }
+
+    .side-item strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 13px;
+    }
+
+    .side-item span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* =========================
+       Publications
+    ========================== */
+
+    .pub-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .pub {
+      position: relative;
+      padding: 22px 22px 20px 25px;
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      background: var(--surface);
+      transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+    .pub::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 18px;
+      bottom: 18px;
+      width: 3px;
+      border-radius: 99px;
+      background: #dbe4f7;
+    }
+
+    .pub:hover {
+      transform: translateY(-2px);
+      border-color: #d3dbe8;
+      box-shadow: var(--shadow);
+    }
+
+    .pub-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 7px;
+    }
+
+    .pub-year {
+      flex: 0 0 auto;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+    }
+
+    .pub-title {
+      margin: 0;
+      font-size: 17px;
+      line-height: 1.45;
+      letter-spacing: -0.015em;
+    }
+
+    .authors {
+      margin: 7px 0 5px;
+      color: #596274;
+      font-size: 14px;
+    }
+
+    .authors strong {
+      color: var(--text);
+    }
+
+    .venue {
+      margin: 0;
+      color: #4b5563;
+      font-size: 13px;
+    }
+
+    .meta-row {
+      margin-top: 13px;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .badge {
+      padding: 5px 9px;
+      border-radius: 8px;
+      background: var(--accent-soft);
+      color: #1e40af;
+      font-size: 11px;
+      font-weight: 750;
+    }
+
+    .paper-link {
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    /* =========================
+       Cards
+    ========================== */
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .info-card {
+      padding: 23px;
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      background: var(--surface);
+      box-shadow: 0 7px 24px rgba(15, 23, 42, 0.04);
+    }
+
+    .info-card h3 {
+      margin: 0 0 11px;
+      font-size: 16px;
+    }
+
+    .info-card ul {
+      margin: 0;
+      padding-left: 18px;
+      color: #5b6472;
+      font-size: 14px;
+    }
+
+    .info-card li + li {
+      margin-top: 7px;
+    }
+
+    /* =========================
+       Footer
+    ========================== */
+
+    footer {
+      padding: 54px 0 72px;
+      text-align: center;
+      color: #9ca3af;
+      font-size: 12px;
+    }
+
+    footer a {
+      color: #6b7280;
+      font-weight: 650;
+    }
+
+    /* =========================
+       Responsive
+    ========================== */
+
+    @media (max-width: 820px) {
+      .nav {
+        padding: 12px 0;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .navlinks {
+        justify-content: flex-start;
+        gap: 13px 16px;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding-top: 46px;
+      }
+
+      .portrait-wrap {
+        justify-content: flex-start;
+      }
+
+      .portrait-card {
+        width: min(280px, 100%);
+      }
+
+      .about-grid,
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .container {
+        width: min(var(--max), calc(100% - 24px));
+      }
+
+      .hero h1 {
+        font-size: 46px;
+      }
+
+      .panel,
+      .pub,
+      .info-card {
+        padding: 19px;
+      }
+
+      .pub {
+        padding-left: 22px;
+      }
+
+      .pub::before {
+        left: 0;
+      }
+
+      .section-head {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       Navigation
+  ========================== -->
+
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="#home">
+        Kunhao Li <span>· Homepage</span>
+      </a>
+
+      <nav class="navlinks" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#patents">Patents</a>
+        <a href="#service">Service</a>
+        <a href="#football">Football</a>
+      </nav>
+    </div>
+  </header>
 
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <!-- Clustrmaps -->
-                <div style="width: 25%;margin-left: auto;margin-right: auto;">
-                  <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=wF1bSzuJt8-Dld3bx3mhmNT47ChITuSmJQ_314BqQnw&cl=ffffff&w=a"></script>
-                </div>
-                
-                <!-- Source -->
-                <p style="text-align:center;font-size:small;">
-                  Design and source code from <a href="https://jonbarron.info/">Jon Barron's website</a>. 
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-        </td>
-      </tr>
-    </table>
-  </body>
+  <main id="home" class="container">
+
+    <!-- =========================
+         Hero
+    ========================== -->
+
+    <section class="hero">
+
+      <div>
+        <!-- <span class="eyebrow">
+          Artificial Intelligence · Research
+        </span> -->
+
+        <h1>
+          Kunhao Li <em>(李坤豪)</em>
+        </h1>
+
+        <p class="role">
+          PhD Student · South China University of Technology
+        </p>
+
+        <p class="intro">
+          I work on large language models, data mining, deep learning,
+          LLM privacy, and general graph safety.
+        </p>
+
+        <div class="research-tags" aria-label="Research interests">
+          <span class="tag">Large Language Models</span>
+          <span class="tag">LLM Privacy</span>
+          <span class="tag">Graph Safety</span>
+          <span class="tag">Data Mining</span>
+          <span class="tag">Deep Learning</span>
+        </div>
+
+        <div class="actions">
+          <a class="btn primary"
+             href="mailto:kunhomlihf@gmail.com">
+            Email
+          </a>
+
+          <a class="btn"
+             target="_blank"
+             rel="noopener"
+             href="https://scholar.google.com.hk/citations?user=RMzk1SoAAAAJ&hl=zh-CN">
+            Google Scholar
+          </a>
+
+          <a class="btn"
+             target="_blank"
+             rel="noopener"
+             href="https://github.com/PreckLi">
+            GitHub
+          </a>
+        </div>
+      </div>
+
+
+      <div class="portrait-wrap">
+
+        <div class="portrait-card">
+
+          <a href="images/khl_ai.jpg">
+            <img
+              src="images/khl_ai.jpg"
+              alt="Portrait of Kunhao Li"
+            >
+          </a>
+
+          <p class="caption">
+            Kunhao Li · SCUT
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         About
+    ========================== -->
+
+    <section id="about">
+
+      <div class="section-head">
+        <h2>About</h2>
+        <p class="section-note">
+          Background & research focus
+        </p>
+      </div>
+
+      <div class="panel about-grid">
+
+        <div>
+
+          <p>
+            I am currently a PhD student specializing in artificial
+            intelligence at <strong>South China University of Technology</strong>
+            (2024–present), under the supervision of
+            <a href="https://www2.scut.edu.cn/sse/2018/0614/c16788a270682/page.htm">
+              Lei Yang
+            </a>.
+            My research interests encompass large language models,
+            data mining, and deep learning.
+          </p>
+
+          <p>
+            I graduated from Anhui Normal University in 2021, earning a
+            B.Eng. degree in Internet of Things. That same year, I was
+            accepted into Anhui University, where I ranked first in my
+            major with a total score of 381 (143 in professional courses).
+            In 2024, I was admitted to South China University of Technology
+            to pursue my PhD.
+          </p>
+
+          <p>
+            Currently, I am doing further research on LLM privacy and
+            general graph safety. If you are interested in my work,
+            feel free to reach out to me.
+          </p>
+
+        </div>
+
+
+        <div class="side-list">
+
+          <div class="side-item">
+            <strong>Current Position</strong>
+            <span>
+              PhD Student, South China University of Technology ·
+              2024–present
+            </span>
+          </div>
+
+          <div class="side-item">
+            <strong>Supervisor</strong>
+            <span>
+              <a href="https://www2.scut.edu.cn/sse/2018/0614/c16788a270682/page.htm">
+                Lei Yang
+              </a>
+            </span>
+          </div>
+
+          <div class="side-item">
+            <strong>Research</strong>
+            <span>
+              LLM privacy · graph safety · data mining · deep learning
+            </span>
+          </div>
+
+          <div class="side-item">
+            <strong>Location</strong>
+            <span>
+              Guangzhou, China
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         Publications
+    ========================== -->
+
+    <section id="publications">
+
+      <div class="section-head">
+
+        <h2>Selected Publications</h2>
+
+        <p class="section-note">
+          1 denotes equal contribution
+        </p>
+
+      </div>
+
+
+      <div class="pub-list">
+
+        <!-- Publication 1 -->
+
+        <article class="pub">
+
+          <div class="pub-top">
+            <span class="pub-year">2026</span>
+            <span class="badge">CCF A</span>
+          </div>
+
+          <h3 class="pub-title">
+            Breaking the Rigidity: Semantic-Driven Privacy Enhancement in LLMs
+          </h3>
+
+          <p class="authors">
+            <strong>Kunhao Li</strong><sup>1</sup>,
+            Lei Yang,
+            Haohuang Wen,
+            Di Wu,
+            Jiannong Cao
+          </p>
+
+          <p class="venue">
+            <strong>
+              IEEE Transactions on Dependable and Secure Computing
+            </strong>
+            · Sep 2026
+          </p>
+
+          <div class="meta-row">
+
+            <a class="paper-link"
+               target="_blank"
+               rel="noopener"
+               href="https://ieeexplore.ieee.org/document/11694332">
+              Paper ↗
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- Publication 2 -->
+
+        <article class="pub">
+
+          <div class="pub-top">
+            <span class="pub-year">2026</span>
+            <span class="badge">CCF A</span>
+          </div>
+
+          <h3 class="pub-title">
+            HiddenEcho: Mitigating Noise Amplification in Differentially
+            Private LLMs with Hidden-State Correction
+          </h3>
+
+          <p class="authors">
+            Wenhao Li,
+            <strong>Kunhao Li</strong><sup>1</sup>,
+            Lei Yang
+          </p>
+
+          <p class="venue">
+            <strong>ICLR 2026</strong>
+          </p>
+
+          <div class="meta-row">
+
+            <a class="paper-link"
+               target="_blank"
+               rel="noopener"
+               href="https://openreview.net/pdf?id=ER9BElK8He">
+              Paper ↗
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- Publication 3 -->
+
+        <article class="pub">
+
+          <div class="pub-top">
+            <span class="pub-year">2026</span>
+            <span class="badge">CCF A</span>
+          </div>
+
+          <h3 class="pub-title">
+            Cross-Modal Unlearning via Influential Neuron Path Editing
+            in Multimodal Large Language Models
+          </h3>
+
+          <p class="authors">
+            <strong>Kunhao Li</strong>,
+            Wenhao Li,
+            Di Wu,
+            Lei Yang,
+            Jun Bai,
+            Ju Jia,
+            Jason Xue
+          </p>
+
+          <p class="venue">
+            <strong>AAAI 2026</strong> · Oral
+          </p>
+
+          <div class="meta-row">
+
+            <a class="paper-link"
+               target="_blank"
+               rel="noopener"
+               href="https://ojs.aaai.org/index.php/AAAI/article/view/40870">
+              Paper ↗
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- Publication 4 -->
+
+        <article class="pub">
+
+          <div class="pub-top">
+            <span class="pub-year">2025</span>
+            <span class="badge">arXiv</span>
+          </div>
+
+          <h3 class="pub-title">
+            Who Owns This Sample: Cross-Client Membership Inference Attack
+            in Federated Graph Neural Networks
+          </h3>
+
+          <p class="authors">
+            <strong>Kunhao Li</strong>,
+            Di Wu,
+            Jun Bai,
+            Jing Xu,
+            Lei Yang,
+            Ziyi Zhang,
+            Yiliao Song,
+            Wencheng Yang,
+            Taotao Cai,
+            Yan Li
+          </p>
+
+          <p class="venue">
+            <strong>arXiv:2507.19964</strong>
+          </p>
+
+          <div class="meta-row">
+
+            <a class="paper-link"
+               target="_blank"
+               rel="noopener"
+               href="https://arxiv.org/abs/2507.19964">
+              arXiv ↗
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- Publication 5 -->
+
+        <article class="pub">
+
+          <div class="pub-top">
+            <span class="pub-year">2024</span>
+            <span class="badge">CCF A</span>
+          </div>
+
+          <h3 class="pub-title">
+            SES: Bridging the Gap Between Explainability and Prediction
+            of Graph Neural Networks
+          </h3>
+
+          <p class="authors">
+            Zhenhua Huang,
+            <strong>Kunhao Li</strong>,
+            Shaojie Wang,
+            Zhaohong Jia,
+            Wentao Zhu,
+            Sharad Mehrotra
+          </p>
+
+          <p class="venue">
+            <strong>ICDE 2024</strong>
+          </p>
+
+          <div class="meta-row">
+
+            <a class="paper-link"
+               target="_blank"
+               rel="noopener"
+               href="https://ieeexplore.ieee.org/document/10597945">
+              Paper ↗
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- Publication 6 -->
+
+        <article class="pub">
+
+          <div class="pub-top">
+            <span class="pub-year">2024</span>
+            <span class="badge">SCI Q1</span>
+          </div>
+
+          <h3 class="pub-title">
+            Graph Relearn Network: Reducing performance variance and
+            improving prediction accuracy of graph neural networks
+          </h3>
+
+          <p class="authors">
+            Zhenhua Huang<sup>1</sup>,
+            <strong>Kunhao Li</strong><sup>1</sup>,
+            Yihang Jiang,
+            Zhaohong Jia,
+            Linyuan Lv,
+            Yunjie Ma
+          </p>
+
+          <p class="venue">
+            <strong>Knowledge-Based Systems</strong>
+            · Oct 2024 · 2025 KBS Best Paper Award
+          </p>
+
+          <div class="meta-row">
+
+            <a class="paper-link"
+               target="_blank"
+               rel="noopener"
+               href="https://www.sciencedirect.com/science/article/pii/S0950705124009456">
+              Paper ↗
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- Publication 7 -->
+
+        <article class="pub">
+
+          <div class="pub-top">
+            <span class="pub-year">2023</span>
+            <span class="badge">SCI Q1</span>
+          </div>
+
+          <h3 class="pub-title">
+            SGCN: A scalable graph convolutional network with graph-shaped
+            kernels and multi-channels
+          </h3>
+
+          <p class="authors">
+            Zhenhua Huang<sup>1</sup>,
+            Wenhao Zhou<sup>1</sup>,
+            <strong>Kunhao Li</strong><sup>1</sup>,
+            Zhaohong Jia
+          </p>
+
+          <p class="venue">
+            <strong>Knowledge-Based Systems</strong>
+            · Nov 2023
+          </p>
+
+          <div class="meta-row">
+
+            <a class="paper-link"
+               target="_blank"
+               rel="noopener"
+               href="https://www.sciencedirect.com/science/article/abs/pii/S0950705123006731?via%3Dihub">
+              Paper ↗
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- Publication 8 -->
+
+        <article class="pub">
+
+          <div class="pub-top">
+            <span class="pub-year">2023</span>
+            <span class="badge">SCI Q1</span>
+          </div>
+
+          <h3 class="pub-title">
+            RAHG: A Role-Aware Hypergraph Neural Network for Node
+            Classification in Graphs
+          </h3>
+
+          <p class="authors">
+            <strong>Kunhao Li</strong>,
+            Zhenhua Huang,
+            Zhaohong Jia
+          </p>
+
+          <p class="venue">
+            <strong>
+              IEEE Transactions on Network Science and Engineering
+            </strong>
+            · Feb 2023
+          </p>
+
+          <div class="meta-row">
+
+            <a class="paper-link"
+               target="_blank"
+               rel="noopener"
+               href="https://ieeexplore.ieee.org/document/10039676">
+              Paper ↗
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- Publication 9 -->
+
+        <article class="pub">
+
+          <div class="pub-top">
+            <span class="pub-year">2025</span>
+            <span class="badge">SCI Q2</span>
+          </div>
+
+          <h3 class="pub-title">
+            Graph Structure Prompt Learning: A Novel Methodology to
+            Improve Performance of Graph Neural Networks
+          </h3>
+
+          <p class="authors">
+            Zhenhua Huang,
+            <strong>Kunhao Li</strong>,
+            Shaojie Wang,
+            Zhaohong Jia,
+            Wentao Zhu,
+            Sharad Mehrotra
+          </p>
+
+          <p class="venue">
+            <strong>Applied Intelligence</strong>
+            · 2025
+          </p>
+
+          <div class="meta-row">
+
+            <a class="paper-link"
+               target="_blank"
+               rel="noopener"
+               href="https://link.springer.com/article/10.1007/s10489-025-06952-x">
+              Paper ↗
+            </a>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         Patents
+    ========================== -->
+
+    <section id="patents">
+
+      <div class="section-head">
+        <h2>Patents</h2>
+      </div>
+
+      <div class="info-card">
+
+        <h3>
+          An adaptive semantic-aware privacy protection method and
+          device for large language models
+        </h3>
+
+        <ul>
+          <li>
+            <strong>Kunhao Li</strong>, Lei Yang
+          </li>
+
+          <li>
+            <a class="paper-link"
+               target="_blank"
+               rel="noopener"
+               href="https://d.wanfangdata.com.cn/patent/ZL_CN202510014381.7_CN120068141A_20250530">
+              Patent record ↗
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         Beyond Research
+    ========================== -->
+
+    <section id="football">
+
+      <div class="section-head">
+
+        <h2>Beyond Research</h2>
+
+        <p class="section-note">
+          Football
+        </p>
+
+      </div>
+
+
+      <div class="two-col">
+
+        <!-- Football -->
+
+        <div class="info-card">
+
+          <h3>Football</h3>
+
+          <ul>
+
+            <li>
+              <strong>2019:</strong>
+              8th Place, Anhui Provincial University Football Cup —
+              Left Back, No. 66
+            </li>
+
+            <li>
+              <strong>2021:</strong>
+              3rd Place, Anhui University Championship —
+              Midfielder, No. 10
+            </li>
+
+            <li>
+              <strong>2024:</strong>
+              Runner-Up, South China University of Technology Championship —
+              Attacking Midfielder, No. 23
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <!-- Academic Service -->
+
+        <div class="info-card" id="service">
+
+          <h3>Academic Service</h3>
+
+          <ul>
+
+            <li>
+              Reviewer —
+              IEEE Transactions on Neural Networks and Learning Systems
+            </li>
+
+            <li>
+              Reviewer —
+              Journal of Supercomputing
+            </li>
+
+            <li>
+              Reviewer —
+              Journal of Big Data
+            </li>
+
+            <li>
+              Reviewer —
+              International Journal of Machine Learning and Cybernetics
+            </li>
+
+            <li>
+              <strong>Award:</strong>
+              Knowledge-Based Systems 2025 Best Paper Award
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       Footer
+  ========================== -->
+
+  <footer>
+
+    <div class="container">
+
+      <p>
+        © Kunhao Li · Built for an academic research profile.
+      </p>
+
+    </div>
+
+  </footer>
+
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

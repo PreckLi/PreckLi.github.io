@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Kunhao Li">
-  <meta name="description" content="Kunhao Li — PhD student working on LLM privacy, graph safety, data mining, and deep learning.">
-  <title>Kunhao Li — Homepage</title>
+  <meta name="description" content="Kunhao Li — PhD student at South China University of Technology and Visiting PhD Student at Singapore Management University, researching LLM privacy and graph safety.">
+  <title>Kunhao Li Homepage</title>
 
   <style>
     :root {
@@ -142,10 +142,28 @@
     }
 
     .role {
-      margin: 0 0 18px;
+      margin: 0 0 8px;
       color: #374151;
       font-size: 20px;
       font-weight: 600;
+    }
+
+    .visiting-affiliation {
+      margin: 0 0 20px;
+      color: #4b5563;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .visiting-affiliation strong {
+      color: #1e40af;
+      font-weight: 700;
+    }
+
+    .visiting-affiliation span {
+      display: block;
+      color: var(--muted);
+      font-size: 14px;
     }
 
     .intro {
@@ -315,6 +333,39 @@
     .side-item span {
       color: var(--muted);
       font-size: 13px;
+    }
+
+    .academic-link {
+      color: var(--accent);
+      font-weight: 650;
+      text-decoration-color: #bfdbfe;
+      text-underline-offset: 3px;
+    }
+
+    .academic-link:hover {
+      text-decoration-color: currentColor;
+    }
+
+    .scientist-note {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 6px;
+      background: var(--accent-soft);
+      color: #1e40af;
+      font-size: 11px;
+      line-height: 1.6;
+      font-weight: 700;
+      vertical-align: baseline;
+      white-space: normal;
+    }
+
+    .side-item .scientist-note {
+      margin: 5px 0 0;
+      color: #1e40af;
+    }
+
+    .supervisor-entry + .supervisor-entry {
+      margin-top: 8px;
     }
 
     /* =========================
@@ -574,9 +625,10 @@
         </h1>
 
         <p class="role">
-          South China University of Technology
+          PhD Student · South China University of Technology
+          <br>
+          Visiting PhD Student · Singapore Management University
         </p>
-
         <p class="intro">
           I work on large language models, data mining, deep learning,
           LLM privacy, and general graph safety.
@@ -591,8 +643,7 @@
         </div>
 
         <div class="actions">
-          <a class="btn primary"
-             href="mailto:kunhomlihf@gmail.com">
+          <a class="btn primary" href="/cdn-cgi/l/email-protection#3b504e555354565752535d7b5c565a525715585456">
             Email
           </a>
 
@@ -625,7 +676,7 @@
           </a>
 
           <p class="caption">
-            Kunhao Li · SCUT
+            Kunhao Li · SCUT / SMU
           </p>
 
         </div>
@@ -639,86 +690,94 @@
          About
     ========================== -->
 
-    <section id="about">
+    
+<div class="panel about-grid">
 
-      <div class="section-head">
-        <h2>About</h2>
-        <p class="section-note">
-          Background & research focus
-        </p>
+  <div>
+
+    <p>
+      I am currently a PhD student specializing in artificial intelligence
+      at <strong>South China University of Technology</strong> (2024-present),
+      supervised by
+      <a class="academic-link" href="https://www2.scut.edu.cn/sse/2018/0614/c16788a270682/page.htm" target="_blank" rel="noopener noreferrer">Lei Yang</a>.
+    </p>
+
+    <p>
+      I am also a <strong>Visiting PhD Student</strong> at the
+      <strong>School of Computing and Information Systems</strong>,
+      <strong>Singapore Management University (SMU)</strong>, under the supervision of
+      <a class="academic-link" href="https://faculty.smu.edu.sg/profile/debin-gao-346" target="_blank" rel="noopener noreferrer">Debin Gao</a>
+      and
+      <a class="academic-link" href="https://www.guansongpang.com/" target="_blank" rel="noopener noreferrer">Guansong Pang</a>.
+      In addition, I am remotely supervised by
+      <a class="academic-link" href="https://scholars.latrobe.edu.au/d3wu" target="_blank" rel="noopener noreferrer">Di Wu</a>.
+    </p>
+
+    <p>
+      I graduated from Anhui Normal University in 2021, earning a B.Eng. degree in Internet of Things. That same year, I was accepted into Anhui University, where I ranked first in my
+      major with a total score of 381 (143 in professional courses). In 2024, I was admitted to South China University of Technology to pursue my PhD.
+    </p>
+
+    <p>
+      My research interests include large language models, LLM privacy, general graph safety, data mining, and deep learning. If you are interested in my work, feel free to reach out to me.
+    </p>
+
+  </div>
+
+
+  <div class="side-list">
+
+    <div class="side-item">
+      <strong>PhD Position</strong>
+      <span>
+        PhD Student, School of Software Engineering · 2024-present
+      </span>
+    </div>
+
+    <div class="side-item">
+      <strong>Visiting Position</strong>
+      <span>
+        Visiting PhD Student, School of Computing and Information Systems · 2026-present
+      </span>
+    </div>
+
+    <div class="side-item">
+      <strong>PhD Supervisor · SCUT</strong>
+      <div class="supervisor-entry">
+        <a class="academic-link" href="https://www2.scut.edu.cn/sse/2018/0614/c16788a270682/page.htm" target="_blank" rel="noopener noreferrer">Lei Yang</a>
+        <span class="scientist-note">Stanford/Elsevier Top 2% Scientist</span>
       </div>
+    </div>
 
-      <div class="panel about-grid">
-
-        <div>
-
-          <p>
-            I am currently a doctoral student specializing in artificial
-            intelligence at <strong>South China University of Technology</strong>
-            (2024–present), under the supervision of
-            <a href="https://www2.scut.edu.cn/sse/2018/0614/c16788a270682/page.htm">
-              Lei Yang
-            </a>.
-            My research interests encompass large language models,
-            data mining, and deep learning.
-          </p>
-
-          <p>
-            I graduated from Anhui Normal University in 2021, earning a
-            B.Eng. degree in Internet of Things. That same year, I was
-            accepted into Anhui University, where I ranked first in my
-            major with a total score of 381 (143 in professional courses).
-            In 2024, I was admitted to South China University of Technology
-            to pursue my PhD.
-          </p>
-
-          <p>
-            Currently, I am doing further research on LLM privacy and
-            general graph safety. If you are interested in my work,
-            feel free to reach out to me.
-          </p>
-
-        </div>
-
-
-        <div class="side-list">
-
-          <div class="side-item">
-            <strong>Current Position</strong>
-            <span>
-              PhD Student, South China University of Technology ·
-              2024–present
-            </span>
-          </div>
-
-          <div class="side-item">
-            <strong>Supervisor</strong>
-            <span>
-              <a href="https://www2.scut.edu.cn/sse/2018/0614/c16788a270682/page.htm">
-                Lei Yang
-              </a>
-            </span>
-          </div>
-
-          <div class="side-item">
-            <strong>Research</strong>
-            <span>
-              LLM privacy · graph safety · data mining · deep learning
-            </span>
-          </div>
-
-          <div class="side-item">
-            <strong>Location</strong>
-            <span>
-              Guangzhou, China
-            </span>
-          </div>
-
-        </div>
-
+    <div class="side-item">
+      <strong>Visiting PhD Supervisors · SMU</strong>
+      <div class="supervisor-entry">
+        <a class="academic-link" href="https://faculty.smu.edu.sg/profile/debin-gao-346" target="_blank" rel="noopener noreferrer">Debin Gao</a>
       </div>
+      <div class="supervisor-entry">
+        <a class="academic-link" href="https://www.guansongpang.com/" target="_blank" rel="noopener noreferrer">Guansong Pang</a>
+        <span class="scientist-note">Stanford/Elsevier Top 2% Scientist</span>
+      </div>
+    </div>
 
-    </section>
+    <div class="side-item">
+      <strong>Remote Supervisor</strong>
+      <div class="supervisor-entry">
+        <a class="academic-link" href="https://scholars.latrobe.edu.au/d3wu" target="_blank" rel="noopener noreferrer">Di Wu</a>
+      </div>
+    </div>
+
+    <div class="side-item">
+      <strong>Research</strong>
+      <span>
+        LLM privacy · graph safety · data mining · deep learning
+      </span>
+    </div>
+
+  </div>
+
+</div>
+</section>
 
 
     <!-- =========================
@@ -1249,12 +1308,13 @@
             <ul>
               <li>
                 <strong>Reviewer:</strong><br>
+                ACM WWW 2027<br>
                 ICLR 2027<br>
                 NeurIPS 2026<br>
                 IEEE Transactions on Neural Networks and Learning Systems<br>
+                Knowledge-Based Systems<br>
                 Journal of Supercomputing<br>
                 Journal of Big Data<br>
-                International Journal of Machine Learning and Cybernetics
               </li>
 
               <li>
@@ -1289,5 +1349,5 @@
 
   </footer>
 
-</body>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
 </html>
